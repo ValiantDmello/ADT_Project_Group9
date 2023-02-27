@@ -1,7 +1,7 @@
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 
-class RatingsBreakdown(MRJob):
+class TopMovies(MRJob):
     def steps(self):
         return [
             MRStep(mapper=self.mapper,
@@ -22,4 +22,4 @@ class RatingsBreakdown(MRJob):
 
 
 if __name__ == '__main__':
-    RatingsBreakdown.run()
+    TopMovies.run()
